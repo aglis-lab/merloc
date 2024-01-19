@@ -1,0 +1,25 @@
+{
+  "error": {
+    "failed_to_connect": "Tentativo di connessione con %s fallito.",
+    "no_valid_file_or_url": "%s non è un file o un URL valida.",
+    "unnecessary_parameter": "il parametro %s non è necessario",
+    "unnecessary_parameter_plural": "i parametri %s non sono necessari",
+    "nonexistent_directory": "La cartella %s non è stata trovata.",
+    "empty_directory": "la cartella %s è vuota",
+    "invalid_json": "%s non è un file 'json' valido",
+    "special_characters_in_key": "La chiave non ammette caratteri speciali. \\n chiave: %s",
+    "required_path": "È necessario includere il percorso del file o della cartella.",
+    "invalid_dart": "%s non è un file 'dart' valido",
+    "invalid_file_or_directory": "%s non è un file o una cartella valida.",
+    "package_not_found": "Package: %s non è stato trovato sul 'pub.dev'",
+    "cli_version_not_found": "Impossibile trovare la versione installata.",
+    "update_cli": "Si è verificato un errore durante l'aggiornamento di get_cli",
+    "folder_not_found": "La cartella %s non è stata trovata",
+    "file_not_found": "Il file al percorso %s non è stato trovato",
+    "access_denied": "Accesso negato a %s",
+    "unexpected": "Si è verificato un errore inaspettato:",
+    "no_package_to_remove": "Immetti il nome del pacchetto da rimuovere"
+  },
+  "example": "Esempio:",
+  "warning": "Avvertimento:"
+}

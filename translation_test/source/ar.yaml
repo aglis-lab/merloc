@@ -1,0 +1,22 @@
+error:
+  failed_to_connect: فشل الاتصال مع %s
+  no_valid_file_or_url: '%s ليس ملفا او رابط صحيحا'
+  unnecessary_parameter: '%s هذا المعامل ليس الزاميا'
+  unnecessary_parameter_plural: '%s معاملات ليست الزامية'
+  nonexistent_directory: '%s مجلد غير موجود.'
+  empty_directory: '%s فارغ'
+  invalid_json: '%s ليس ملف json صحيحا'
+  special_characters_in_key: 'الرموز ليست مقبولة فى المفتاح. \n المفتاح: %s'
+  required_path: تحتاج الى ارسال الملف او مسار المجلد
+  invalid_dart: '%s ليس ملف dart صحيحا'
+  invalid_file_or_directory: '%s ليس ملفات او مجلدا صحيحا'
+  package_not_found: 'المكتبة: %s ليست موجودة فى pub.dev'
+  cli_version_not_found: لم يتم العثور على الاصدار الذى قمت بتثبيته.
+  update_cli: هناك خطأ اثناء تحديث get_cli
+  folder_not_found: المجلد %s غير موجود
+  file_not_found: لم يتم العثور على الملف %s
+  access_denied: اذن الوصول غير مرخص %s
+  unexpected: 'حدث خطأ غير متوقع:'
+  no_package_to_remove: ادخل اسم المكتبة التى حذفها
+example: 'مثال:'
+warning: 'تنبيه:'

@@ -1,0 +1,13 @@
+existing_page: The page [%s] already exists, do you want to overwrite it?
+name_to_project: what is the name of the project?
+company_domain: What is your company's domain?
+model_name: Could not set the model name automatically, which name do you want to use?
+package_already_installed: 'package: %s already installed, do you want to update?'
+lib_not_empty: >-
+  Your lib folder is not empty. Are you sure you want to overwrite your
+  application? \n WARNING: This action is irreversible
+ios_lang: what language do you want to use on ios?
+android_lang: what language do you want to use on android?
+use_null_safe: Do you want to use null safe?
+use_linter: do you want to use some linter?
+new_page_name: what new name for the page?

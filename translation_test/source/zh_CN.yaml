@@ -1,0 +1,22 @@
+error:
+  failed_to_connect: 连接到 %s 失败
+  no_valid_file_or_url: '%s 不是有效的文件或URL'
+  unnecessary_parameter: 参数 %s 是多余的
+  unnecessary_parameter_plural: 参数 %s 是多余的
+  nonexistent_directory: '%s 不存在'
+  empty_directory: '%s 是空的'
+  invalid_json: '%s 不是个有效的json文件'
+  special_characters_in_key: 'key中包含不允许的特殊字符. \n key: %s'
+  required_path: 需要传入文件或路径
+  invalid_dart: '%s 不是有效的dart文件'
+  invalid_file_or_directory: '%s 不是有效的文件或目录'
+  package_not_found: '依赖: %s 在 pub.dev 中没有找到'
+  cli_version_not_found: 没有找到已安装版本。
+  update_cli: 升级 get_cli 错误
+  folder_not_found: 文件夹 %s 未找到
+  file_not_found: 在 %s 中没有找到文件
+  access_denied: 对 %s 的访问被拒绝
+  unexpected: '发生意外错误:'
+  no_package_to_remove: 请输入你想移除的 package 名称
+example: '例:'
+warning: '警告:'

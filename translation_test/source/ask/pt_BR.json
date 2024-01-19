@@ -1,0 +1,8 @@
+{
+  "existing_page": "A página [%s] já existe, deseja sobrescrevê-la?",
+  "name_to_project": "Qual é o nome do projeto?",
+  "company_domain": "Qual é o domínio da sua empresa?",
+  "model_name": "Não foi possível definir o nome do modelo automaticamente, qual nome você deseja usar?",
+  "package_already_installed": "pacote: %s já instalado, deseja atualizar?",
+  "lib_not_empty": "Sua pasta lib não está vazia. Tem certeza de que deseja sobrescrever seu aplicativo? \\n AVISO: essa ação é irreversível"
+}

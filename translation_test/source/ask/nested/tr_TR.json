@@ -1,0 +1,8 @@
+{
+  "existing_page": "[%s] sayfası zaten mevcut, üzerine mi yazılsın?",
+  "name_to_project": "Projenin adı nedir?",
+  "company_domain": "Şirketinizin domain adresi nedir?",
+  "model_name": "Model adı otomatik olarak ayarlanamadı, hangi ad kullanılsın?",
+  "package_already_installed": "Paket: %s zaten yüklü, güncellemek ister misin?",
+  "lib_not_empty": "lib klasörünüz boş değil. Bu uygulamanın üzerine yazmak istediğinden emin misin? \\n UYARI: Bu işlem geri alınamaz"
+}

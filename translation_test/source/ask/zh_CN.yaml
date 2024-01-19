@@ -1,0 +1,11 @@
+existing_page: 页面 [%s] 已存在，你想覆盖吗？
+name_to_project: 项目名称是？
+company_domain: 你公司的域名是？
+model_name: 无法自动设置model名称，你想用什么名称？
+package_already_installed: 'package: %s 已经安装, 你想更新它吗？'
+lib_not_empty: 你的 lib 文件夹不是空的。你确定要覆盖你的应用吗？ \n 警告:操作不可逆
+ios_lang: 你想在 iOS 端使用什么语言？
+android_lang: 你想在 Android 端使用什么语言？
+use_null_safe: 要使用 null safe 吗？
+use_linter: 你想用代码检查器吗？
+new_page_name: page 的名字是？

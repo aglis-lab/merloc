@@ -1,0 +1,22 @@
+{
+  "error": {
+    "failed_to_connect": "%s ile bağlantı başarısız oldu",
+    "no_valid_file_or_url": "%s bir dosya veya geçerli bir url değil",
+    "unnecessary_parameter": "%s parametresi gerekli değil",
+    "unnecessary_parameter_plural": "%s parametreleri gerekli değil",
+    "nonexistent_directory": "%s dizini mevcut değil.",
+    "empty_directory": "%s dizini boş",
+    "invalid_json": "%s, geçerli bir json dosyası değil",
+    "special_characters_in_key": "Anahtar içerisinde özel karakterlere izin verilmez. \\n karakter: %s",
+    "required_path": "Dosya veya dizin yolunu geçmek için gerekli",
+    "invalid_dart": "%s geçerli bir dart dosyası değil",
+    "invalid_file_or_directory": "%s geçerli bir dosya veya dizin değil",
+    "package_not_found": "Paket: %s pub.dev'de bulunamadı",
+    "cli_version_not_found": "Yüklemek istediğiniz sürüm bulunamadı.",
+    "update_cli": "get_cli yükseltilirken bir hata oluştu",
+    "folder_not_found": "%s klasörü bulunamadı",
+    "file_not_found": "%s içinde dosya bulunamadı",
+    "access_denied": "%s için erişim engellendi",
+    "unexpected": "Beklenmeyen bir hata meydana geldi:"
+  }
+}

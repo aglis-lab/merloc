@@ -1,0 +1,13 @@
+{
+  "existing_page": "La pagina [%s] è già presente, vuoi sovrascriverla?",
+  "name_to_project": "Qual'è il nome del tuo progetto?",
+  "company_domain": "Qual'è il dominio della tua compagnia?",
+  "model_name": "Impossibile impostare automaticamente il nome del modello, quale vuoi usare?",
+  "package_already_installed": "Pacchetto: %s è già presente, desideri aggiornarlo?",
+  "lib_not_empty": "La cartella 'lib' contiene dei file. Sei sicuro di voler sovrascrivere la tua applicazione? \\n ATTENZIONE: Azione irreversibile",
+  "ios_lang": "Quale linguaggio vuoi utilizzare su piattaforma iOS?",
+  "android_lang": "Quale linguaggio vuoi utilizzare su piattaforma Android?",
+  "use_null_safe": "Vuoi usare la metodologia 'null-safe'?",
+  "use_linter": "Vuoi utilizzare qualche 'linter'?",
+  "new_page_name": "Quale sarà il nome della nuova pagina?"
+}

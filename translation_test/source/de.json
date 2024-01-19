@@ -1,0 +1,25 @@
+{
+  "error": {
+    "failed_to_connect": "Verbindung mit %s fehlgeschlagen",
+    "no_valid_file_or_url": "%s ist keine Datei oder gültige Url",
+    "unnecessary_parameter": "der Parameter %s ist nicht notwendig",
+    "unnecessary_parameter_plural": "die Parameter %s ist nicht notwendig",
+    "nonexistent_directory": "Das Verzeichnis %s existiert nicht.",
+    "empty_directory": "Das Verzeichnis %s ist leer",
+    "invalid_json": "%s ist keine gültige JSON-Datei",
+    "special_characters_in_key": "Sonderzeichen sind in der Key nicht erlaubt. \\n Key: %s",
+    "required_path": "Wird benötigt, um den Datei- oder Verzeichnispfad zu übergeben",
+    "invalid_dart": "Die %s ist keine gültige Dart-Datei",
+    "invalid_file_or_directory": "Die %s ist keine gültige Datei oder Verzeichnis",
+    "package_not_found": "Paket: %s wurde nicht in pub.dev gefunden",
+    "cli_version_not_found": "die von Ihnen installierte Version wurde nicht gefunden.",
+    "update_cli": "Es gab einen Fehler bei der Aktualisierung von get_cli",
+    "folder_not_found": "Ordner %s nicht gefunden",
+    "file_not_found": "Datei nicht gefunden in %s",
+    "access_denied": "Zugriff auf %s verweigert",
+    "unexpected": "Unerwarteter Fehler ist aufgetreten:",
+    "no_package_to_remove": "Geben Sie den Namen des Pakets ein, das Sie entfernen möchten"
+  },
+  "example": "Beispiel:",
+  "warning": "Warnung:"
+}
