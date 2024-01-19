@@ -22,8 +22,7 @@ This package is usefull for splitting translations to make sure the team have li
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Install package from pub.dev
 
 ## Usage
 
