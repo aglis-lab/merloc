@@ -30,3 +30,5 @@ build/
 
 /translation_test/generated/*
 !translation_test/generated/.gitkeep
+
+.fvm
