@@ -14,9 +14,16 @@ void main(List<String> arguments) {
   final outputFolder = arguments[1];
   final merloc = Merloc(input: inputFolder, output: outputFolder);
   try {
+    stdout.writeln("load localization config file...");
     merloc.loadLocales();
-    merloc.loadLocalization();
+
+    stdout.writeln("load all translations...");
+    merloc.loadTranslations();
+
+    stdout.writeln("merge and create ourput...");
     merloc.writeOutput();
+
+    stdout.writeln("finish merge localization...");
   } catch (e) {
     stderr.writeln("Error Occured!");
     stderr.writeln(e.toString());

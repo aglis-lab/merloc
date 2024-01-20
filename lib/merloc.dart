@@ -16,7 +16,7 @@ class Merloc {
   Merloc({required this.input, required this.output});
 
   // Covert list of directory and file into a Metadata
-  void loadLocalization() {
+  void loadTranslations() {
     final dir = Directory(input);
     final listDir = dir.listSync(recursive: true);
 
