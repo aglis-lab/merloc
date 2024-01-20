@@ -2,7 +2,6 @@ name: merloc
 description: "Dart Package for merge localization folder based"
 version: 0.0.2
 homepage: https://kodeaglis.com
-publish_to: https://pub.dev
 
 environment:
   sdk: ">=3.1.2 <4.0.0"
