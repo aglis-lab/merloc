@@ -1,17 +1,10 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Merloc
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+**Merloc** is stand for _`merge localization`_. Mainly created because I always get so many conflict on single big translations file.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+With **Merloc** I hope, I can reduce conflict with separating translations.
 
-This package is a cli for merge yaml or json file translations into one or single yaml or json file.
+This package is a cli for merge **_yaml_** or **_json_** file translations into one or single **_json_** file.
 
 This package is usefull for splitting translations to make sure the team have little conflict when merging with other team
 
@@ -22,11 +15,19 @@ This package is usefull for splitting translations to make sure the team have li
 
 ## Getting started
 
-Install package from pub.dev
+### To install:
+
+##### use
+
+`pub global activate merloc`
+
+##### or
+
+`flutter pub global activate merloc`
 
 ## Usage
 
-merloc [input folder localization] [output folder localization]
+`merloc [input folder localization] [output folder localization]`
 
 ## Additional information
 

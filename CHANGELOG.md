@@ -1,3 +1,7 @@
+## 0.0.4
+
+- Update readme instruction
+
 ## 0.0.3
 
 - Remove flutter sdk from package
