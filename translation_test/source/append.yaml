@@ -1,0 +1,6 @@
+ask:
+  testing:
+    inside: hello
+
+    parent_obj:
+      child_ojb: should replaced

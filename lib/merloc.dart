@@ -1,6 +1,8 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:merloc/Locales.dart';
+import 'package:merloc/metadata.dart';
 import 'package:merloc/yaml.dart';
 import 'package:yaml/yaml.dart' as yaml;
 import 'package:path/path.dart' as path;
@@ -13,50 +15,33 @@ class Merloc {
   final List<String> locales = [];
   final Map<String, Map> translations = {};
 
-  Merloc({required this.input, required this.output});
+  Merloc({
+    required this.input,
+    required this.output,
+  });
+
+  // Load Locales File
+  void loadLocales() {
+    final locale = Locale(inputFolder: input);
+
+    locales.addAll(locale.loadLocales());
+
+    for (var item in locales) {
+      translations[item] = {};
+    }
+  }
 
   // Covert list of directory and file into a Metadata
   void loadTranslations() {
-    final dir = Directory(input);
-    final listDir = dir.listSync(recursive: true);
+    // Load Metadata
+    final meta = Metadata(inputFolder: input, locales: locales);
+    final metaItems = meta.loadListMeta();
 
-    for (var item in listDir) {
-      final filename = path.basename(item.path);
-      final fileParts = filename.split('.');
-      if (fileParts.length != 2) {
-        continue;
-      }
+    // Load File
+    for (var item in metaItems) {
+      stdout.writeln("Path : " + item.path);
 
-      // check if yaml or json
-      FileType fileType = FileType.none;
-      if (fileParts[1] == 'yaml') {
-        fileType = FileType.yaml;
-      } else if (fileParts[1] == 'json') {
-        fileType = FileType.json;
-      }
-
-      if (fileType == FileType.none) {
-        continue;
-      }
-
-      // already registered on localization
-      if (!locales.contains(fileParts[0])) {
-        continue;
-      }
-
-      // Check if file really exist or it just a directory
-      final file = File(item.path);
-      if (!file.existsSync()) {
-        continue;
-      }
-
-      // Get Path File and trim the leading character
-      final pathFile =
-          item.path.substring(input.length).trimLeading('\\').trimLeading('/');
-      final objectKeys = path.split(pathFile)..removeLast();
-
-      // Load File
-      loadFile(fileParts[0], item.path, fileType, objectKeys);
+      loadFile(item);
     }
   }
 
@@ -69,8 +54,11 @@ class Merloc {
     }
   }
 
-  void loadFile(
-      String locale, String path, FileType fileType, List<String> keys) {
+  void loadFile(MetaItem item) {
+    final locale = item.locale;
+    final path = item.path;
+    final fileType = item.fileType;
+    final keys = item.keys;
     final file = File(path);
 
     var data = <String, dynamic>{};
@@ -94,46 +82,47 @@ class Merloc {
       temp = temp[key];
     }
 
-    temp.addAll(data);
+    appendData(temp, data);
   }
 
-  void loadLocales() {
-    final locales = loadLocalesFile();
-    if (locales == null) {
-      stderr.writeln(
-          "localization.yaml or localization.json not found insize input folder!");
-      exit(1);
+  // Key always a string
+  // Doesn't need to worry about it
+  void appendData(Map temp, Map data) {
+    if (data.isEmpty) {
+      return;
     }
 
-    if (locales.isEmpty) {
-      stderr.writeln("locales should be not empty!");
-      exit(1);
+    if (temp.isEmpty) {
+      return temp.addAll(data);
     }
 
-    this.locales.addAll(locales);
+    // Key should be a string
+    for (var key in data.keys) {
+      // Check if data item is a primitive type
+      var item = data[key];
+      if (!(item is Map)) {
+        temp[key] = item;
+        continue;
+      }
 
-    for (var item in locales) {
-      translations[item] = {};
+      // If key is not exist
+      if (!temp.containsKey(key)) {
+        temp[key] = data;
+        continue;
+      }
+
+      // Check if temp item is primitype type
+      var tempItem = temp[key];
+      if (!(tempItem is Map)) {
+        temp[key] = data;
+        continue;
+      }
+
+      appendData(
+        tempItem,
+        item,
+      );
     }
-  }
-
-  List<String>? loadLocalesFile() {
-    var file = File(path.join(input, "localization.yaml"));
-    if (file.existsSync()) {
-      final localeList =
-          (yaml.loadYaml(file.readAsStringSync()) as yaml.YamlMap)
-              .toMap()["locales"] as List;
-      return localeList.map((e) => (e as String)).toList();
-    }
-
-    file = File(path.join(input, "localization.json"));
-    if (file.existsSync()) {
-      final localeList =
-          json.decode(file.readAsStringSync())["locales"] as List;
-      return localeList.map((e) => e as String).toList();
-    }
-
-    return null;
   }
 }
 

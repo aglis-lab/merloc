@@ -1,0 +1,5 @@
+testing:
+  hello: inside
+  inside: overide
+
+  parent_obj: replaced with string

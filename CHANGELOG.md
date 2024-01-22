@@ -1,3 +1,7 @@
+## 0.1.1
+
+- Support for single argument
+
 ## 0.0.4
 
 - Update readme instruction

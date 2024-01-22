@@ -8,6 +8,10 @@ This package is a cli for merge **_yaml_** or **_json_** file translations into 
 
 This package is usefull for splitting translations to make sure the team have little conflict when merging with other team
 
+## pub.dev
+
+Merloc Dart Package: https://pub.dev/packages/merloc
+
 ## Features
 
 - Merge Multiple Translations file
@@ -27,7 +31,13 @@ This package is usefull for splitting translations to make sure the team have li
 
 ## Usage
 
+### Generate New Localization
+
 `merloc [input folder localization] [output folder localization]`
+
+#### OR
+
+`merloc [input and onput folder localization]`
 
 ## Additional information
 
