@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:merloc/Locales.dart';
+import 'package:merloc/locales.dart';
 import 'package:merloc/metadata.dart';
 import 'package:merloc/yaml.dart';
 import 'package:yaml/yaml.dart' as yaml;
@@ -107,14 +107,14 @@ class Merloc {
 
       // If key is not exist
       if (!temp.containsKey(key)) {
-        temp[key] = data;
+        temp[key] = item;
         continue;
       }
 
       // Check if temp item is primitype type
       var tempItem = temp[key];
       if (!(tempItem is Map)) {
-        temp[key] = data;
+        temp[key] = item;
         continue;
       }
 

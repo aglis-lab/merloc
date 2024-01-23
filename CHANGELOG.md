@@ -1,3 +1,7 @@
+## 0.1.2
+
+- Bugfix for Duplicate Key
+
 ## 0.1.1
 
 - Support for single argument
